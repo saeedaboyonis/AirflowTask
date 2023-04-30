@@ -1,0 +1,26 @@
+[2023-04-30T15:29:54.854+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: environment_dag.process_data manual__2023-04-30T15:29:53.370194+00:00 [queued]>
+[2023-04-30T15:29:54.864+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: environment_dag.process_data manual__2023-04-30T15:29:53.370194+00:00 [queued]>
+[2023-04-30T15:29:54.865+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-30T15:29:54.865+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-04-30T15:29:54.865+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-30T15:29:54.878+0000] {taskinstance.py:1309} INFO - Executing <Task(BranchPythonOperator): process_data> on 2023-04-30 15:29:53.370194+00:00
+[2023-04-30T15:29:54.882+0000] {standard_task_runner.py:55} INFO - Started process 60 to run task
+[2023-04-30T15:29:54.884+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'environment_dag', 'process_data', 'manual__2023-04-30T15:29:53.370194+00:00', '--job-id', '218', '--raw', '--subdir', 'DAGS_FOLDER/environmentDAG/environmentDag.py', '--cfg-path', '/tmp/tmpkji3qoc3']
+[2023-04-30T15:29:54.885+0000] {standard_task_runner.py:83} INFO - Job 218: Subtask process_data
+[2023-04-30T15:29:54.938+0000] {task_command.py:389} INFO - Running <TaskInstance: environment_dag.process_data manual__2023-04-30T15:29:53.370194+00:00 [running]> on host 3778ccb33614
+[2023-04-30T15:29:55.007+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=environment_dag
+AIRFLOW_CTX_TASK_ID=process_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-30T15:29:53.370194+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-30T15:29:53.370194+00:00
+[2023-04-30T15:29:55.007+0000] {python.py:177} INFO - Done. Returned value was: file_creation_development
+[2023-04-30T15:29:55.007+0000] {python.py:211} INFO - Branch callable return file_creation_development
+[2023-04-30T15:29:55.007+0000] {skipmixin.py:155} INFO - Following branch file_creation_development
+[2023-04-30T15:29:55.008+0000] {skipmixin.py:211} INFO - Skipping tasks ['file_creation_production']
+[2023-04-30T15:29:55.048+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=environment_dag, task_id=process_data, execution_date=20230430T152953, start_date=20230430T152954, end_date=20230430T152955
+[2023-04-30T15:29:55.096+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-04-30T15:29:55.131+0000] {taskinstance.py:2596} INFO - 1 downstream tasks scheduled from follow-on schedule check

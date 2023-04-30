@@ -1,0 +1,24 @@
+[2023-04-30T15:29:57.094+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: environment_dag.print_to_console manual__2023-04-30T15:29:53.370194+00:00 [queued]>
+[2023-04-30T15:29:57.101+0000] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: environment_dag.print_to_console manual__2023-04-30T15:29:53.370194+00:00 [queued]>
+[2023-04-30T15:29:57.102+0000] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-30T15:29:57.102+0000] {taskinstance.py:1289} INFO - Starting attempt 1 of 1
+[2023-04-30T15:29:57.102+0000] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-30T15:29:57.113+0000] {taskinstance.py:1309} INFO - Executing <Task(PythonOperator): print_to_console> on 2023-04-30 15:29:53.370194+00:00
+[2023-04-30T15:29:57.116+0000] {standard_task_runner.py:55} INFO - Started process 64 to run task
+[2023-04-30T15:29:57.119+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'environment_dag', 'print_to_console', 'manual__2023-04-30T15:29:53.370194+00:00', '--job-id', '220', '--raw', '--subdir', 'DAGS_FOLDER/environmentDAG/environmentDag.py', '--cfg-path', '/tmp/tmpt1_f18sf']
+[2023-04-30T15:29:57.119+0000] {standard_task_runner.py:83} INFO - Job 220: Subtask print_to_console
+[2023-04-30T15:29:57.166+0000] {task_command.py:389} INFO - Running <TaskInstance: environment_dag.print_to_console manual__2023-04-30T15:29:53.370194+00:00 [running]> on host 3778ccb33614
+[2023-04-30T15:29:57.221+0000] {taskinstance.py:1518} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=environment_dag
+AIRFLOW_CTX_TASK_ID=print_to_console
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-30T15:29:53.370194+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-30T15:29:53.370194+00:00
+[2023-04-30T15:29:57.231+0000] {environmentDag.py:49} INFO - hello ciValue from development branch
+[2023-04-30T15:29:57.231+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-04-30T15:29:57.238+0000] {taskinstance.py:1332} INFO - Marking task as SUCCESS. dag_id=environment_dag, task_id=print_to_console, execution_date=20230430T152953, start_date=20230430T152957, end_date=20230430T152957
+[2023-04-30T15:29:57.291+0000] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-04-30T15:29:57.314+0000] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check
